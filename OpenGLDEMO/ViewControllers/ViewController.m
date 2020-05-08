@@ -58,7 +58,8 @@
             @{@"title": @"图片绘制GLKit-GLKView", @"viewController": @"GLKViewImageViewController"},
             @{@"title": @"图片绘制GLKit", @"viewController": @"ImageViewController"},
             @{@"title": @"图片绘制GLSL", @"viewController": @"ImageGLSLViewController"},
-            @{@"title": @"LUT", @"viewController": @"LUTViewController"}
+            @{@"title": @"LUT", @"viewController": @"LUTViewController"},
+            @{@"title": @"长腿瘦身", @"viewController": @"BodyViewController"}
         ];
     }
     
