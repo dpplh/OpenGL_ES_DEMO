@@ -23,12 +23,24 @@
 		6454CB1A244AAD3D009CB7FC /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6454CB19244AAD3D009CB7FC /* ImageViewController.m */; };
 		6454CB1D244AB020009CB7FC /* leaves.png in Resources */ = {isa = PBXBuildFile; fileRef = 6454CB1C244AB020009CB7FC /* leaves.png */; };
 		6454CB20244AB378009CB7FC /* ImageGLSLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6454CB1F244AB378009CB7FC /* ImageGLSLViewController.m */; };
+		647AD098246ABF8200EAA18F /* Cube.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 647AD097246ABF8200EAA18F /* Cube.fsh */; };
+		647AD09A246ABF8800EAA18F /* Cube.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 647AD099246ABF8800EAA18F /* Cube.vsh */; };
+		647AD09E246AC4FB00EAA18F /* LightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AD09D246AC4FB00EAA18F /* LightingViewController.m */; };
+		647AD0A3246AC51A00EAA18F /* Lighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 647AD0A2246AC51A00EAA18F /* Lighting.fsh */; };
+		647AD0A5246AC67A00EAA18F /* Lighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 647AD0A4246AC67A00EAA18F /* Lighting.vsh */; };
 		647C4824244DCF100031AC98 /* LUTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647C4823244DCF100031AC98 /* LUTViewController.m */; };
 		649F0F6D2452CDF100FE6066 /* body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 649F0F6C2452CDF100FE6066 /* body.jpg */; };
 		649F0F822452D35B00FE6066 /* GLDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 649F0F812452D35B00FE6066 /* GLDisplayView.m */; };
 		649F0F872452D44A00FE6066 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 649F0F862452D44A00FE6066 /* GLProgram.m */; };
 		649F0F8B24531B8000FE6066 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 649F0F8A24531B8000FE6066 /* Utils.m */; };
 		649F0F8F24531B9E00FE6066 /* UIImage+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 649F0F8E24531B9E00FE6066 /* UIImage+Categories.m */; };
+		64A985302466CE38004FD367 /* CoordSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A9852E2466CE38004FD367 /* CoordSystemViewController.m */; };
+		64A985342466D01A004FD367 /* CoordSystem.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 64A985332466D01A004FD367 /* CoordSystem.fsh */; };
+		64A985362466D025004FD367 /* CoordSystem.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 64A985352466D025004FD367 /* CoordSystem.vsh */; };
+		64A9853A2466E073004FD367 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A985392466E073004FD367 /* CameraViewController.m */; };
+		64AE9DCF2468F7B900482B94 /* Camera.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 64AE9DCE2468F7B900482B94 /* Camera.fsh */; };
+		64AE9DD12468F7C000482B94 /* Camera.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 64AE9DD02468F7C000482B94 /* Camera.vsh */; };
+		64AE9DD52469546A00482B94 /* CubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE9DD42469546A00482B94 /* CubeViewController.m */; };
 		64ED095D24507A9300560050 /* GLKViewImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ED095C24507A9300560050 /* GLKViewImageViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +70,12 @@
 		6454CB1C244AB020009CB7FC /* leaves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaves.png; sourceTree = "<group>"; };
 		6454CB1E244AB378009CB7FC /* ImageGLSLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageGLSLViewController.h; sourceTree = "<group>"; };
 		6454CB1F244AB378009CB7FC /* ImageGLSLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageGLSLViewController.m; sourceTree = "<group>"; };
+		647AD097246ABF8200EAA18F /* Cube.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Cube.fsh; sourceTree = "<group>"; };
+		647AD099246ABF8800EAA18F /* Cube.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Cube.vsh; sourceTree = "<group>"; };
+		647AD09C246AC4FB00EAA18F /* LightingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightingViewController.h; sourceTree = "<group>"; };
+		647AD09D246AC4FB00EAA18F /* LightingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightingViewController.m; sourceTree = "<group>"; };
+		647AD0A2246AC51A00EAA18F /* Lighting.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lighting.fsh; sourceTree = "<group>"; };
+		647AD0A4246AC67A00EAA18F /* Lighting.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lighting.vsh; sourceTree = "<group>"; };
 		647C4822244DCF100031AC98 /* LUTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUTViewController.h; sourceTree = "<group>"; };
 		647C4823244DCF100031AC98 /* LUTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUTViewController.m; sourceTree = "<group>"; };
 		649F0F6C2452CDF100FE6066 /* body.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = body.jpg; sourceTree = "<group>"; };
@@ -69,6 +87,16 @@
 		649F0F8A24531B8000FE6066 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		649F0F8D24531B9E00FE6066 /* UIImage+Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Categories.h"; sourceTree = "<group>"; };
 		649F0F8E24531B9E00FE6066 /* UIImage+Categories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Categories.m"; sourceTree = "<group>"; };
+		64A9852D2466CE38004FD367 /* CoordSystemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordSystemViewController.h; sourceTree = "<group>"; };
+		64A9852E2466CE38004FD367 /* CoordSystemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoordSystemViewController.m; sourceTree = "<group>"; };
+		64A985332466D01A004FD367 /* CoordSystem.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CoordSystem.fsh; sourceTree = "<group>"; };
+		64A985352466D025004FD367 /* CoordSystem.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = CoordSystem.vsh; sourceTree = "<group>"; };
+		64A985382466E073004FD367 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		64A985392466E073004FD367 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		64AE9DCE2468F7B900482B94 /* Camera.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Camera.fsh; sourceTree = "<group>"; };
+		64AE9DD02468F7C000482B94 /* Camera.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Camera.vsh; sourceTree = "<group>"; };
+		64AE9DD32469546A00482B94 /* CubeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeViewController.h; sourceTree = "<group>"; };
+		64AE9DD42469546A00482B94 /* CubeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeViewController.m; sourceTree = "<group>"; };
 		64ED095B24507A9300560050 /* GLKViewImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKViewImageViewController.h; sourceTree = "<group>"; };
 		64ED095C24507A9300560050 /* GLKViewImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKViewImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,9 +156,13 @@
 		6454CB0A2449CCF6009CB7FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				64106D392464359A005267C2 /* Body */,
+				647AD09B246AC4DD00EAA18F /* LightingViewController */,
 				6454CAF72449C9BA009CB7FC /* ViewController.h */,
 				6454CAF82449C9BA009CB7FC /* ViewController.m */,
+				64AE9DD22469545D00482B94 /* CubeViewController */,
+				64A985372466E065004FD367 /* Camera */,
+				64A985212466CD73004FD367 /* 3D */,
+				64106D392464359A005267C2 /* Body */,
 				647C4821244DCF060031AC98 /* LUT */,
 				6454CB17244AAD33009CB7FC /* Image */,
 				6454CB0E2449CD27009CB7FC /* Triangle */,
@@ -177,6 +209,34 @@
 				6454CB1C244AB020009CB7FC /* leaves.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		647AD096246ABF7500EAA18F /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				647AD097246ABF8200EAA18F /* Cube.fsh */,
+				647AD099246ABF8800EAA18F /* Cube.vsh */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		647AD09B246AC4DD00EAA18F /* LightingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				647AD09F246AC50200EAA18F /* Shader */,
+				647AD09C246AC4FB00EAA18F /* LightingViewController.h */,
+				647AD09D246AC4FB00EAA18F /* LightingViewController.m */,
+			);
+			path = LightingViewController;
+			sourceTree = "<group>";
+		};
+		647AD09F246AC50200EAA18F /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				647AD0A2246AC51A00EAA18F /* Lighting.fsh */,
+				647AD0A4246AC67A00EAA18F /* Lighting.vsh */,
+			);
+			path = Shader;
 			sourceTree = "<group>";
 		};
 		647C4821244DCF060031AC98 /* LUT */ = {
@@ -256,6 +316,54 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		64A985212466CD73004FD367 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				64A985322466CFF7004FD367 /* Shader */,
+				64A9852D2466CE38004FD367 /* CoordSystemViewController.h */,
+				64A9852E2466CE38004FD367 /* CoordSystemViewController.m */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
+		64A985322466CFF7004FD367 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				64A985332466D01A004FD367 /* CoordSystem.fsh */,
+				64A985352466D025004FD367 /* CoordSystem.vsh */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		64A985372466E065004FD367 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				64AE9DCC2468F7A500482B94 /* Shader */,
+				64A985382466E073004FD367 /* CameraViewController.h */,
+				64A985392466E073004FD367 /* CameraViewController.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		64AE9DCC2468F7A500482B94 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				64AE9DCE2468F7B900482B94 /* Camera.fsh */,
+				64AE9DD02468F7C000482B94 /* Camera.vsh */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		64AE9DD22469545D00482B94 /* CubeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				647AD096246ABF7500EAA18F /* Shader */,
+				64AE9DD32469546A00482B94 /* CubeViewController.h */,
+				64AE9DD42469546A00482B94 /* CubeViewController.m */,
+			);
+			path = CubeViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,14 +421,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647AD098246ABF8200EAA18F /* Cube.fsh in Resources */,
+				647AD0A5246AC67A00EAA18F /* Lighting.vsh in Resources */,
+				647AD0A3246AC51A00EAA18F /* Lighting.fsh in Resources */,
+				64A985342466D01A004FD367 /* CoordSystem.fsh in Resources */,
 				64106D41246435E7005267C2 /* BodyViewController.xib in Resources */,
 				6454CB012449C9BB009CB7FC /* LaunchScreen.storyboard in Resources */,
 				6454CB1D244AB020009CB7FC /* leaves.png in Resources */,
+				64AE9DD12468F7C000482B94 /* Camera.vsh in Resources */,
+				64AE9DCF2468F7B900482B94 /* Camera.fsh in Resources */,
+				647AD09A246ABF8800EAA18F /* Cube.vsh in Resources */,
 				6454CB142449D502009CB7FC /* glsl.vsh in Resources */,
 				649F0F6D2452CDF100FE6066 /* body.jpg in Resources */,
 				6454CB102449CF64009CB7FC /* Main.storyboard in Resources */,
 				6454CB162449D510009CB7FC /* glsl.fsh in Resources */,
 				6454CAFE2449C9BB009CB7FC /* Assets.xcassets in Resources */,
+				64A985362466D025004FD367 /* CoordSystem.vsh in Resources */,
 				641B9A672457D91100BD2657 /* body2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A985302466CE38004FD367 /* CoordSystemViewController.m in Sources */,
 				6454CB1A244AAD3D009CB7FC /* ImageViewController.m in Sources */,
 				6454CAF92449C9BA009CB7FC /* ViewController.m in Sources */,
 				649F0F822452D35B00FE6066 /* GLDisplayView.m in Sources */,
@@ -340,10 +457,13 @@
 				6454CAF32449C9BA009CB7FC /* AppDelegate.m in Sources */,
 				649F0F872452D44A00FE6066 /* GLProgram.m in Sources */,
 				6454CB042449C9BB009CB7FC /* main.m in Sources */,
+				64A9853A2466E073004FD367 /* CameraViewController.m in Sources */,
 				64106D40246435E7005267C2 /* BodyViewController.m in Sources */,
 				64ED095D24507A9300560050 /* GLKViewImageViewController.m in Sources */,
+				647AD09E246AC4FB00EAA18F /* LightingViewController.m in Sources */,
 				6454CB0D2449CD22009CB7FC /* TriangleViewController.m in Sources */,
 				6454CB20244AB378009CB7FC /* ImageGLSLViewController.m in Sources */,
+				64AE9DD52469546A00482B94 /* CubeViewController.m in Sources */,
 				649F0F8F24531B9E00FE6066 /* UIImage+Categories.m in Sources */,
 				6454CAF62449C9BA009CB7FC /* SceneDelegate.m in Sources */,
 			);

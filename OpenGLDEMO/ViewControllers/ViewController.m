@@ -59,7 +59,11 @@
             @{@"title": @"图片绘制GLKit", @"viewController": @"ImageViewController"},
             @{@"title": @"图片绘制GLSL", @"viewController": @"ImageGLSLViewController"},
             @{@"title": @"LUT", @"viewController": @"LUTViewController"},
-            @{@"title": @"长腿瘦身", @"viewController": @"BodyViewController"}
+            @{@"title": @"长腿瘦身", @"viewController": @"BodyViewController"},
+            @{@"title": @"坐标系统", @"viewController": @"CoordSystemViewController"},
+            @{@"title": @"Camera", @"viewController": @"CameraViewController"},
+            @{@"title": @"立方体", @"viewController": @"CubeViewController"},
+            @{@"title": @"光照", @"viewController": @"LightingViewController"},
         ];
     }
     
