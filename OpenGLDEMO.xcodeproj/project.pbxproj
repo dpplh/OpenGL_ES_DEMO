@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640990F52499B33400109109 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 640990F32499B33400109109 /* red.png */; };
+		640990F62499B33400109109 /* lookup_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 640990F42499B33400109109 /* lookup_blue.png */; };
+		640991232499C58500109109 /* kobe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 640991212499C58400109109 /* kobe.jpg */; };
+		640991242499C58500109109 /* lookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 640991222499C58500109109 /* lookup.png */; };
 		64106D40246435E7005267C2 /* BodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64106D3E246435E7005267C2 /* BodyViewController.m */; };
 		64106D41246435E7005267C2 /* BodyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64106D3F246435E7005267C2 /* BodyViewController.xib */; };
+		64137AA12489E2D400AD9F01 /* AvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64137AA02489E2D400AD9F01 /* AvatarViewController.m */; };
+		64137AA42489E2E900AD9F01 /* avatar.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 64137AA32489E2E900AD9F01 /* avatar.fsh */; };
+		64137AA62489E2F100AD9F01 /* avatar.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 64137AA52489E2F100AD9F01 /* avatar.vsh */; };
+		64137AAB2489E37800AD9F01 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64137AA82489E37800AD9F01 /* avatar.jpg */; };
+		64137AAC2489E37800AD9F01 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64137AA92489E37800AD9F01 /* background.jpg */; };
+		64137AAD2489E37800AD9F01 /* prospect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64137AAA2489E37800AD9F01 /* prospect.jpg */; };
 		641B9A672457D91100BD2657 /* body2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 641B9A662457D91000BD2657 /* body2.jpg */; };
 		6454CAF32449C9BA009CB7FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6454CAF22449C9BA009CB7FC /* AppDelegate.m */; };
 		6454CAF62449C9BA009CB7FC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6454CAF52449C9BA009CB7FC /* SceneDelegate.m */; };
@@ -28,6 +38,9 @@
 		647AD09E246AC4FB00EAA18F /* LightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AD09D246AC4FB00EAA18F /* LightingViewController.m */; };
 		647AD0A3246AC51A00EAA18F /* Lighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 647AD0A2246AC51A00EAA18F /* Lighting.fsh */; };
 		647AD0A5246AC67A00EAA18F /* Lighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 647AD0A4246AC67A00EAA18F /* Lighting.vsh */; };
+		647AD0A9246C1EC900EAA18F /* SpecularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AD0A8246C1EC900EAA18F /* SpecularViewController.m */; };
+		647AD0AC246C1EDA00EAA18F /* Specular.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 647AD0AB246C1EDA00EAA18F /* Specular.fsh */; };
+		647AD0AE246C1EE100EAA18F /* Specular.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 647AD0AD246C1EE100EAA18F /* Specular.vsh */; };
 		647C4824244DCF100031AC98 /* LUTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647C4823244DCF100031AC98 /* LUTViewController.m */; };
 		649F0F6D2452CDF100FE6066 /* body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 649F0F6C2452CDF100FE6066 /* body.jpg */; };
 		649F0F822452D35B00FE6066 /* GLDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 649F0F812452D35B00FE6066 /* GLDisplayView.m */; };
@@ -41,13 +54,27 @@
 		64AE9DCF2468F7B900482B94 /* Camera.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 64AE9DCE2468F7B900482B94 /* Camera.fsh */; };
 		64AE9DD12468F7C000482B94 /* Camera.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 64AE9DD02468F7C000482B94 /* Camera.vsh */; };
 		64AE9DD52469546A00482B94 /* CubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE9DD42469546A00482B94 /* CubeViewController.m */; };
+		64B1CBE424873F7000B1C413 /* LUTApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B1CBE324873F7000B1C413 /* LUTApplyViewController.m */; };
+		64B1CBE72487406C00B1C413 /* LUTApply.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 64B1CBE62487406C00B1C413 /* LUTApply.fsh */; };
+		64B1CBE92487407400B1C413 /* LUTApply.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 64B1CBE82487407400B1C413 /* LUTApply.vsh */; };
 		64ED095D24507A9300560050 /* GLKViewImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ED095C24507A9300560050 /* GLKViewImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		640990F32499B33400109109 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		640990F42499B33400109109 /* lookup_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_blue.png; sourceTree = "<group>"; };
+		640991212499C58400109109 /* kobe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kobe.jpg; sourceTree = "<group>"; };
+		640991222499C58500109109 /* lookup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup.png; sourceTree = "<group>"; };
 		64106D3D246435E7005267C2 /* BodyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyViewController.h; sourceTree = "<group>"; };
 		64106D3E246435E7005267C2 /* BodyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodyViewController.m; sourceTree = "<group>"; };
 		64106D3F246435E7005267C2 /* BodyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyViewController.xib; sourceTree = "<group>"; };
+		64137A9F2489E2D400AD9F01 /* AvatarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
+		64137AA02489E2D400AD9F01 /* AvatarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
+		64137AA32489E2E900AD9F01 /* avatar.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = avatar.fsh; sourceTree = "<group>"; };
+		64137AA52489E2F100AD9F01 /* avatar.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = avatar.vsh; sourceTree = "<group>"; };
+		64137AA82489E37800AD9F01 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		64137AA92489E37800AD9F01 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		64137AAA2489E37800AD9F01 /* prospect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prospect.jpg; sourceTree = "<group>"; };
 		641B9A662457D91000BD2657 /* body2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = body2.jpg; sourceTree = "<group>"; };
 		6454CAEE2449C9BA009CB7FC /* OpenGLDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6454CAF12449C9BA009CB7FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +103,10 @@
 		647AD09D246AC4FB00EAA18F /* LightingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightingViewController.m; sourceTree = "<group>"; };
 		647AD0A2246AC51A00EAA18F /* Lighting.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lighting.fsh; sourceTree = "<group>"; };
 		647AD0A4246AC67A00EAA18F /* Lighting.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Lighting.vsh; sourceTree = "<group>"; };
+		647AD0A7246C1EC900EAA18F /* SpecularViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecularViewController.h; sourceTree = "<group>"; };
+		647AD0A8246C1EC900EAA18F /* SpecularViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecularViewController.m; sourceTree = "<group>"; };
+		647AD0AB246C1EDA00EAA18F /* Specular.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Specular.fsh; sourceTree = "<group>"; };
+		647AD0AD246C1EE100EAA18F /* Specular.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Specular.vsh; sourceTree = "<group>"; };
 		647C4822244DCF100031AC98 /* LUTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUTViewController.h; sourceTree = "<group>"; };
 		647C4823244DCF100031AC98 /* LUTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUTViewController.m; sourceTree = "<group>"; };
 		649F0F6C2452CDF100FE6066 /* body.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = body.jpg; sourceTree = "<group>"; };
@@ -97,6 +128,10 @@
 		64AE9DD02468F7C000482B94 /* Camera.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Camera.vsh; sourceTree = "<group>"; };
 		64AE9DD32469546A00482B94 /* CubeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeViewController.h; sourceTree = "<group>"; };
 		64AE9DD42469546A00482B94 /* CubeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeViewController.m; sourceTree = "<group>"; };
+		64B1CBE224873F7000B1C413 /* LUTApplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUTApplyViewController.h; sourceTree = "<group>"; };
+		64B1CBE324873F7000B1C413 /* LUTApplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LUTApplyViewController.m; sourceTree = "<group>"; };
+		64B1CBE62487406C00B1C413 /* LUTApply.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LUTApply.fsh; sourceTree = "<group>"; };
+		64B1CBE82487407400B1C413 /* LUTApply.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = LUTApply.vsh; sourceTree = "<group>"; };
 		64ED095B24507A9300560050 /* GLKViewImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKViewImageViewController.h; sourceTree = "<group>"; };
 		64ED095C24507A9300560050 /* GLKViewImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKViewImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +155,36 @@
 				64106D3F246435E7005267C2 /* BodyViewController.xib */,
 			);
 			path = Body;
+			sourceTree = "<group>";
+		};
+		64137A9E2489E2C000AD9F01 /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				64137AA72489E33200AD9F01 /* Images */,
+				64137AA22489E2DC00AD9F01 /* shader */,
+				64137A9F2489E2D400AD9F01 /* AvatarViewController.h */,
+				64137AA02489E2D400AD9F01 /* AvatarViewController.m */,
+			);
+			path = Avatar;
+			sourceTree = "<group>";
+		};
+		64137AA22489E2DC00AD9F01 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				64137AA32489E2E900AD9F01 /* avatar.fsh */,
+				64137AA52489E2F100AD9F01 /* avatar.vsh */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+		64137AA72489E33200AD9F01 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				64137AA82489E37800AD9F01 /* avatar.jpg */,
+				64137AA92489E37800AD9F01 /* background.jpg */,
+				64137AAA2489E37800AD9F01 /* prospect.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		6454CAE52449C9BA009CB7FC = {
@@ -156,9 +221,12 @@
 		6454CB0A2449CCF6009CB7FC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				647AD09B246AC4DD00EAA18F /* LightingViewController */,
+				64137A9E2489E2C000AD9F01 /* Avatar */,
+				64B1CBE124873F5F00B1C413 /* LUTApply */,
 				6454CAF72449C9BA009CB7FC /* ViewController.h */,
 				6454CAF82449C9BA009CB7FC /* ViewController.m */,
+				647AD0A6246C1EB000EAA18F /* SpecularViewController */,
+				647AD09B246AC4DD00EAA18F /* LightingViewController */,
 				64AE9DD22469545D00482B94 /* CubeViewController */,
 				64A985372466E065004FD367 /* Camera */,
 				64A985212466CD73004FD367 /* 3D */,
@@ -204,6 +272,10 @@
 		6454CB1B244AAEC1009CB7FC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				640991212499C58400109109 /* kobe.jpg */,
+				640991222499C58500109109 /* lookup.png */,
+				640990F42499B33400109109 /* lookup_blue.png */,
+				640990F32499B33400109109 /* red.png */,
 				641B9A662457D91000BD2657 /* body2.jpg */,
 				649F0F6C2452CDF100FE6066 /* body.jpg */,
 				6454CB1C244AB020009CB7FC /* leaves.png */,
@@ -235,6 +307,25 @@
 			children = (
 				647AD0A2246AC51A00EAA18F /* Lighting.fsh */,
 				647AD0A4246AC67A00EAA18F /* Lighting.vsh */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		647AD0A6246C1EB000EAA18F /* SpecularViewController */ = {
+			isa = PBXGroup;
+			children = (
+				647AD0AA246C1ECC00EAA18F /* Shader */,
+				647AD0A7246C1EC900EAA18F /* SpecularViewController.h */,
+				647AD0A8246C1EC900EAA18F /* SpecularViewController.m */,
+			);
+			path = SpecularViewController;
+			sourceTree = "<group>";
+		};
+		647AD0AA246C1ECC00EAA18F /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				647AD0AB246C1EDA00EAA18F /* Specular.fsh */,
+				647AD0AD246C1EE100EAA18F /* Specular.vsh */,
 			);
 			path = Shader;
 			sourceTree = "<group>";
@@ -364,6 +455,25 @@
 			path = CubeViewController;
 			sourceTree = "<group>";
 		};
+		64B1CBE124873F5F00B1C413 /* LUTApply */ = {
+			isa = PBXGroup;
+			children = (
+				64B1CBE52487405C00B1C413 /* Shader */,
+				64B1CBE224873F7000B1C413 /* LUTApplyViewController.h */,
+				64B1CBE324873F7000B1C413 /* LUTApplyViewController.m */,
+			);
+			path = LUTApply;
+			sourceTree = "<group>";
+		};
+		64B1CBE52487405C00B1C413 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				64B1CBE62487406C00B1C413 /* LUTApply.fsh */,
+				64B1CBE82487407400B1C413 /* LUTApply.vsh */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,23 +531,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64137AAC2489E37800AD9F01 /* background.jpg in Resources */,
 				647AD098246ABF8200EAA18F /* Cube.fsh in Resources */,
 				647AD0A5246AC67A00EAA18F /* Lighting.vsh in Resources */,
 				647AD0A3246AC51A00EAA18F /* Lighting.fsh in Resources */,
 				64A985342466D01A004FD367 /* CoordSystem.fsh in Resources */,
 				64106D41246435E7005267C2 /* BodyViewController.xib in Resources */,
+				64B1CBE92487407400B1C413 /* LUTApply.vsh in Resources */,
+				640991232499C58500109109 /* kobe.jpg in Resources */,
+				64137AA42489E2E900AD9F01 /* avatar.fsh in Resources */,
+				647AD0AE246C1EE100EAA18F /* Specular.vsh in Resources */,
 				6454CB012449C9BB009CB7FC /* LaunchScreen.storyboard in Resources */,
+				64137AA62489E2F100AD9F01 /* avatar.vsh in Resources */,
 				6454CB1D244AB020009CB7FC /* leaves.png in Resources */,
 				64AE9DD12468F7C000482B94 /* Camera.vsh in Resources */,
 				64AE9DCF2468F7B900482B94 /* Camera.fsh in Resources */,
 				647AD09A246ABF8800EAA18F /* Cube.vsh in Resources */,
 				6454CB142449D502009CB7FC /* glsl.vsh in Resources */,
 				649F0F6D2452CDF100FE6066 /* body.jpg in Resources */,
+				64137AAB2489E37800AD9F01 /* avatar.jpg in Resources */,
 				6454CB102449CF64009CB7FC /* Main.storyboard in Resources */,
 				6454CB162449D510009CB7FC /* glsl.fsh in Resources */,
 				6454CAFE2449C9BB009CB7FC /* Assets.xcassets in Resources */,
+				640990F52499B33400109109 /* red.png in Resources */,
+				64137AAD2489E37800AD9F01 /* prospect.jpg in Resources */,
 				64A985362466D025004FD367 /* CoordSystem.vsh in Resources */,
+				647AD0AC246C1EDA00EAA18F /* Specular.fsh in Resources */,
+				64B1CBE72487406C00B1C413 /* LUTApply.fsh in Resources */,
+				640991242499C58500109109 /* lookup.png in Resources */,
 				641B9A672457D91100BD2657 /* body2.jpg in Resources */,
+				640990F62499B33400109109 /* lookup_blue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,15 +577,18 @@
 				649F0F822452D35B00FE6066 /* GLDisplayView.m in Sources */,
 				649F0F8B24531B8000FE6066 /* Utils.m in Sources */,
 				647C4824244DCF100031AC98 /* LUTViewController.m in Sources */,
+				64137AA12489E2D400AD9F01 /* AvatarViewController.m in Sources */,
 				6454CAF32449C9BA009CB7FC /* AppDelegate.m in Sources */,
 				649F0F872452D44A00FE6066 /* GLProgram.m in Sources */,
 				6454CB042449C9BB009CB7FC /* main.m in Sources */,
+				64B1CBE424873F7000B1C413 /* LUTApplyViewController.m in Sources */,
 				64A9853A2466E073004FD367 /* CameraViewController.m in Sources */,
 				64106D40246435E7005267C2 /* BodyViewController.m in Sources */,
 				64ED095D24507A9300560050 /* GLKViewImageViewController.m in Sources */,
 				647AD09E246AC4FB00EAA18F /* LightingViewController.m in Sources */,
 				6454CB0D2449CD22009CB7FC /* TriangleViewController.m in Sources */,
 				6454CB20244AB378009CB7FC /* ImageGLSLViewController.m in Sources */,
+				647AD0A9246C1EC900EAA18F /* SpecularViewController.m in Sources */,
 				64AE9DD52469546A00482B94 /* CubeViewController.m in Sources */,
 				649F0F8F24531B9E00FE6066 /* UIImage+Categories.m in Sources */,
 				6454CAF62449C9BA009CB7FC /* SceneDelegate.m in Sources */,

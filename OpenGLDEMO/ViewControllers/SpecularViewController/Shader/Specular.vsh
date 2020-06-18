@@ -10,8 +10,7 @@ varying vec3 FragPosition;
 
 void main (void) {
     gl_Position = projection * view * model * vec4(Position, 1.0);
-    
     aNormal = Normal;
-    FragPosition = vec3(model * vec4(Position, 1.0));
+    FragPosition = Position;
 }
 

@@ -1,16 +1,16 @@
 //
-//  LightingViewController.m
+//  SpecularViewController.m
 //  OpenGLDEMO
 //
-//  Created by DPP on 2020/5/12.
+//  Created by DPP on 2020/5/13.
 //  Copyright © 2020 DPP. All rights reserved.
 //
 
-#import "LightingViewController.h"
+#import "SpecularViewController.h"
 #import "GLDisplayView.h"
 #import "UIImage+Categories.h"
 
-const VertexNormal kLightingVertices[] = {
+const VertexNormal kSpecularVertices[] = {
     {{-0.5f, 0.5f, 0.5f},   {0.0f, 0.0f, 1.0f}}, // 前左上 0
     {{-0.5f, -0.5f, 0.5f},  {0.0f, 0.0f, 1.0f}}, // 前左下 1
     {{0.5f, -0.5f, 0.5f},   {0.0f, 0.0f, 1.0f}}, // 前右下 2
@@ -42,7 +42,7 @@ const VertexNormal kLightingVertices[] = {
     {{0.5f, -0.5f, -0.5f},   { 0.0f,-1.0f, 0.0f}}, // 后右下 23
 };
 
-const SenceVertex kLignthingVertex[] = {
+const SenceVertex kSpecularVertex[] = {
     {{-0.5f, 0.5f, 0.5f},   {0.0f, 0.0f}}, // 前左上 0
     {{-0.5f, -0.5f, 0.5f},  {0.0f, 1.0f}}, // 前左下 1
     {{0.5f, -0.5f, 0.5f},   {1.0f, 1.0f}}, // 前右下 2
@@ -74,7 +74,7 @@ const SenceVertex kLignthingVertex[] = {
     {{0.5f, -0.5f, -0.5f},   {1.0f, 1.0f}}, // 后右下 23
 };
 
-const GLbyte kLightingIndexes[] = {
+const GLbyte kSpecularIndexes[] = {
     // 前面
     0, 1, 2,
     0, 2, 3,
@@ -96,7 +96,7 @@ const GLbyte kLightingIndexes[] = {
 };
 
 
-@interface LightingViewController ()
+@interface SpecularViewController ()
 
 @property (nonatomic, strong) GLDisplayView *displayView;
 
@@ -106,7 +106,7 @@ const GLbyte kLightingIndexes[] = {
 
 @end
 
-@implementation LightingViewController
+@implementation SpecularViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -115,21 +115,20 @@ const GLbyte kLightingIndexes[] = {
     EAGLContext *context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
     CGRect frame = {{0, 0}, {CGRectGetWidth(self.view.bounds), CGRectGetWidth(self.view.bounds)}};
-    self.displayView = [[GLDisplayView alloc] initWithFrame:frame vertexShader:@"Lighting" fragmentShader:@"Lighting"];
+    self.displayView = [[GLDisplayView alloc] initWithFrame:frame vertexShader:@"Specular" fragmentShader:@"Specular"];
     self.displayView.center = self.view.center;
     self.displayView.context = context;
     [self.view addSubview:self.displayView];
 
-    [self.displayView updateVerticesNormal:(VertexNormal *)kLightingVertices count:sizeof(kLightingVertices) / sizeof(kLightingVertices[0])];
-    [self.displayView updateIndexes:(GLbyte *)kLightingIndexes size:sizeof(kLightingIndexes)];
+    [self.displayView updateVerticesNormal:(VertexNormal *)kSpecularVertices count:sizeof(kSpecularVertices) / sizeof(kSpecularVertices[0])];
+    [self.displayView updateIndexes:(GLbyte *)kSpecularIndexes size:sizeof(kSpecularIndexes)];
         
     GLuint model = [self.displayView.program uniformIndex:@"model"];
     GLuint view = [self.displayView.program uniformIndex:@"view"];
     GLuint projection = [self.displayView.program uniformIndex:@"projection"];
 
     GLKMatrix4 rotationMatrix4 = GLKMatrix4Identity;
-    rotationMatrix4 = GLKMatrix4Rotate(rotationMatrix4, GLKMathDegreesToRadians(45.0), 1.0, 0.0, 0.0);
-    rotationMatrix4 = GLKMatrix4Rotate(rotationMatrix4, GLKMathDegreesToRadians(45.0), 0.0, 1.0, 0.0);
+    rotationMatrix4 = GLKMatrix4Rotate(rotationMatrix4, GLKMathDegreesToRadians(0), 0.0, 1.0, 0.0);
     
     GLKMatrix4 modelMatrix = rotationMatrix4;
     GLKMatrix4 viewMatrix = GLKMatrix4MakeTranslation(0.0, 0.0, -3.0);
@@ -143,11 +142,13 @@ const GLbyte kLightingIndexes[] = {
     // 漫反射
     GLuint lightColor = [self.displayView.program uniformIndex:@"lightColor"];
     GLuint lightPosition = [self.displayView.program uniformIndex:@"lightPosition"];
+    GLuint viewPosition = [self.displayView.program uniformIndex:@"viewPosition"];
     glUniform4f(objectColor, 1.0, 0.5, 0.3, 1.0);
     glUniform4f(lightColor, 1.0, 1.0, 1.0, 1.0);
     
-    glUniform3f(lightPosition, -5.0, 3.0, 5.0);
+    glUniform3f(lightPosition, -5.0, 0.5, 7.0);
+    glUniform3f(viewPosition, 5.0, 0.0, 7.0);
     
-    [self.displayView drawElementWithMode:GL_TRIANGLES count:sizeof(kLightingIndexes) / sizeof(kLightingIndexes[0])];
+    [self.displayView drawElementWithMode:GL_TRIANGLES count:sizeof(kSpecularIndexes) / sizeof(kSpecularIndexes[0])];
 }
 @end

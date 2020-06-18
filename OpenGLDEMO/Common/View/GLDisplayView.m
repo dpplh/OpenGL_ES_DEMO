@@ -19,6 +19,7 @@
     GLuint _textureCoordinateAttribute;
     GLuint _normalAttribute;
     GLuint _textureUniform;
+    GLuint _mvpUniform;
 }
 
 @property (nonatomic, copy) NSString *vertexShader;
@@ -33,11 +34,22 @@
 - (void)drawWithMode:(GLenum)mode first:(GLint)first count:(GLsizei)count {
     [self useAsCurrentContext];
     
+    GLKMatrix4 model = GLKMatrix4MakeScale(1.0, -1.0, 0.0);
+    GLKMatrix4 view = GLKMatrix4MakeLookAt(0.0, 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+    GLKMatrix4 project = GLKMatrix4MakeOrtho(-1.0, 1.0, -1.0, 1.0, 0.1, 100);
+    
+    GLKMatrix4 mvp = GLKMatrix4Identity;
+    mvp = GLKMatrix4Multiply(mvp, project);
+    mvp = GLKMatrix4Multiply(mvp, view);
+    mvp = GLKMatrix4Multiply(mvp, model);
+    
+    glUniformMatrix4fv(_mvpUniform, 1, GL_FALSE, (GLfloat *)&mvp);
+    
     glBindFramebuffer(GL_FRAMEBUFFER, _frameBuffer);
     
-    glClearColor(0.0, 0.0, 0.0, 1.0);
+    glClearColor(1.0, 1.0, 1.0, 1.0);
     // 开启深度测试
-    glEnable(GL_DEPTH_TEST);
+//    glEnable(GL_DEPTH_TEST);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     glViewport(0, 0, [self drawableWidth], [self drawableHeight]);
@@ -53,7 +65,7 @@
     
     glClearColor(0.0, 0.0, 0.0, 1.0);
     // 开启深度测试
-    glEnable(GL_DEPTH_TEST);
+//    glEnable(GL_DEPTH_TEST);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     glViewport(0, 0, [self drawableWidth], [self drawableHeight]);
@@ -202,6 +214,7 @@
     _textureCoordinateAttribute = [self.program attributeIndex:@"InputTextureCoordinate"];
     _textureUniform = [self.program uniformIndex:@"InputImageTexture"];
     _normalAttribute = [self.program attributeIndex:@"Normal"];
+    _mvpUniform = [self.program uniformIndex:@"MVP"];
     
     glEnableVertexAttribArray(_positionAttribute);
     glEnableVertexAttribArray(_textureCoordinateAttribute);

@@ -12,7 +12,7 @@
 
 @implementation UIImage (Categories)
 
-- (GLuint)texture {
+- (GLuint)texture:(BOOL)needTransform {
     CGImageRef imageRef = self.CGImage;
     
     GLint width = (GLint)CGImageGetWidth(imageRef);
@@ -24,8 +24,11 @@
     CGContextRef contextRef = CGBitmapContextCreate(imageData, width, height, 8, 4 * width, colorSpaceRef, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
     
     CGColorSpaceRelease(colorSpaceRef);
-    CGContextTranslateCTM(contextRef, 0, height);
-    CGContextScaleCTM(contextRef, 1.0, -1.0);
+    
+    if (needTransform) {
+        CGContextTranslateCTM(contextRef, 0, height);
+        CGContextScaleCTM(contextRef, 1.0, -1.0);
+    }
     CGContextDrawImage(contextRef, rect, imageRef);
     
     GLuint textureID;
@@ -44,6 +47,10 @@
     free(imageData);
     
     return textureID;
+}
+
+- (GLuint)texture {
+    return [self texture:YES];
 }
 
 @end

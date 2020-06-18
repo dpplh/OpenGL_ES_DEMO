@@ -99,8 +99,8 @@ const GLbyte indexes[] = {
     GLuint projection = [self.displayView.program uniformIndex:@"projection"];
 
     GLKMatrix4 rotationMatrix4 = GLKMatrix4Identity;
-    rotationMatrix4 = GLKMatrix4Rotate(rotationMatrix4, GLKMathDegreesToRadians(30.0), 1.0, 0.0, 0.0);
-    rotationMatrix4 = GLKMatrix4Rotate(rotationMatrix4, GLKMathDegreesToRadians(-45.0), 0.0, 1.0, 0.0);
+//    rotationMatrix4 = GLKMatrix4Rotate(rotationMatrix4, GLKMathDegreesToRadians(30.0), 1.0, 0.0, 0.0);
+//    rotationMatrix4 = GLKMatrix4Rotate(rotationMatrix4, GLKMathDegreesToRadians(-45.0), 0.0, 1.0, 0.0);
     
     GLKMatrix4 modelMatrix = rotationMatrix4;
     GLKMatrix4 viewMatrix = GLKMatrix4MakeTranslation(0.0, 0.0, -3.0);
@@ -109,6 +109,9 @@ const GLbyte indexes[] = {
     glUniformMatrix4fv(model, 1, GL_FALSE, (GLfloat *)&modelMatrix);
     glUniformMatrix4fv(view, 1, GL_FALSE, (GLfloat *)&viewMatrix);
     glUniformMatrix4fv(projection, 1, GL_FALSE, (GLfloat *)&projectionMatrix);
+    
+//    glEnable(GL_CULL_FACE);
+//    glCullFace(GL_FRONT);
     
     [self.displayView drawElementWithMode:GL_TRIANGLES count:(sizeof(indexes) / sizeof(indexes[0]))];
 }

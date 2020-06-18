@@ -64,6 +64,9 @@
             @{@"title": @"Camera", @"viewController": @"CameraViewController"},
             @{@"title": @"立方体", @"viewController": @"CubeViewController"},
             @{@"title": @"光照", @"viewController": @"LightingViewController"},
+            @{@"title": @"镜面反射", @"viewController": @"SpecularViewController"},
+            @{@"title": @"LUT滤镜", @"viewController": @"LUTApplyViewController"},
+            @{@"title": @"阿凡达3D", @"viewController": @"AvatarViewController"},
         ];
     }
     
